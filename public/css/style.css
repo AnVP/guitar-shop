@@ -1298,7 +1298,7 @@ button,
   color: #585757;
 }
 
-.breadcrumbs__item:last-child a {
+.breadcrumbs__item:last-child span {
   pointer-events: none;
 }
 
@@ -2127,6 +2127,7 @@ button,
 
   margin: 0;
   padding-right: 5px;
+  min-height: 15px;
 
   font-size: 10px;
   line-height: 15px;
@@ -2390,6 +2391,7 @@ button,
 
 .page-content::after {
   bottom: 0;
+  z-index: -1;
 
   height: 139px;
 
@@ -2452,6 +2454,10 @@ button,
   background-color: #131212;
 
   pointer-events: none;
+}
+
+.pagination__page--hidden{
+  display: none
 }
 
 .pagination__page--next a,
